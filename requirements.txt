@@ -1,0 +1,4 @@
+mutagen
+click
+PyQt6
+PyInstaller

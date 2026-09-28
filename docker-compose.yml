@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  music-organizer:
+    build: .
+    volumes:
+      - ${SOURCE_DIR}:/music_source:ro
+      - ${OUTPUT_DIR}:/music_output
+    command: /music_source /music_output ${APPLY_FLAG} ${PROBLEMATIC_FOLDER}
