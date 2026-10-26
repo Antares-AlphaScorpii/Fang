@@ -2117,10 +2117,7 @@ class ReviewPage(QWidget):
         selected_operations = [
             operation
             for operation in selected
-            if operation.get(
-                "status"
-            ) != "keep"
-            and self.is_changed(
+            if self.is_changed(
                 operation
             )
         ]
