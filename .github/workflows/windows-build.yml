@@ -41,4 +41,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          gh release upload v1.0.0 dist/Fang.exe --clobber
+          gh release upload v1.0.1 dist/Fang.exe --clobber
